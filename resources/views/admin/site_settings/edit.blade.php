@@ -1,0 +1,1 @@
+@extends('admin.site_settings.form')

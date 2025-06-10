@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+#monaco-editor-container {
+            height: 500px;
+            @apply border border-gray-200;
+        }
+
+.date-box {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tech-accent {
+    background: linear-gradient(45deg, #0066cc, #0052a3);
+}
+
+.breaking-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.live-indicator {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* Global Styles */
+.ck-editor__main h1 {
+    font-size: 1.75rem;
+}
+
+.ck-editor__main h2 {
+    font-size: 1.5rem;
+}
+
+.ck-editor__main h3 {
+    font-size: 1.25rem;
+}
+
+.ck-editor__main h4 {
+    font-size: 1rem;
+}
+
+.ck-editor__main h5 {
+    font-size: 0.875rem;
+}
+
+.ck-editor__main h6 {
+    font-size: 0.75rem;
+}
+
+/* Style for lists */
+.ck-editor__main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.ck-editor__main ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    color: #555;
+}
+
+.ck-editor__main ul li,
+.ck-editor__main ol li {
+    margin-bottom: 5px;
+    font-family: 'Verdana', sans-serif;
+}
