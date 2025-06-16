@@ -67,6 +67,7 @@
                         <option value="site-description" {{ old('key', $siteSetting->key ?? '') == 'site-description' ? 'selected' : '' }}>site-description</option>
                         <option value="copyright" {{ old('key', $siteSetting->key ?? '') == 'copyright' ? 'selected' : '' }}>copyright</option>
                         <option value="footer-company" {{ old('key', $siteSetting->key ?? '') == 'footer-company' ? 'selected' : '' }}>footer-company</option>
+                        <option value="cookie-consent" {{ old('key', $siteSetting->key ?? '') == 'cookie-consent' ? 'selected' : '' }}>cookie-consent</option>
                     </select>
 
                     <!-- Custom Key Input -->

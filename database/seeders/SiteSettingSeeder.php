@@ -103,6 +103,14 @@ class SiteSettingSeeder extends Seeder
             'article_id' => 4,
             'order' => 1
             ],
+            // cookie-consent
+            [
+                'id' => 12,
+                'key' => 'cookie-consent',
+                'type' => 'text',
+                'value' => 'We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept", you consent to our use of cookies.',
+                'order' => 1
+            ]
         ];
 
         foreach ($settings as $setting) {
